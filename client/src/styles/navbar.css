@@ -1,0 +1,112 @@
+.nav{
+    padding: 1vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav > .logo,
+.nav > .logo > Link, 
+.nav > .searchBx, 
+.nav > .logo > #logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav > #LogoBx {
+    background: #ff6800;
+    width: 58px;
+    height: 58px;
+    border-radius: 20px;
+    margin-right: 1.2vmax;
+    overflow: hidden;
+    cursor: pointer !important;
+    position: relative;
+}
+
+#logoImg{
+    transform: translateX(-40%) scale(1.5);
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 80px;
+}
+
+.logo:hover #logoImg{
+    transform: translateX(40%) scale(1.5);
+}
+
+.nav a{
+    color: rgb(59, 59, 59)!important;;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 1vmax 1.2vmax;
+}
+
+.nav a:hover{
+    color: #ff6800!important;
+}
+
+.signup-btn{
+    background-color: #ff6800;
+    color: #fff;
+    border: 0;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.signup-btn:hover{
+    border: 3px solid #ff6800;
+    color: rgb(0, 0, 0);
+    background-color: #f1f1f1;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: fixed;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 10;
+}
+
+
+/* ----------------------------------------------- */
+
+.navCard{
+    padding: 10px;
+    margin: 1vmax;
+    text-align: center;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navCard .navCard__img{
+    width: 10vmax;
+    height: 10vmax;
+}
+
+.navCard span{
+    display: block;
+}
+
+.navCard .navCard__proName{
+    color: #424242;
+    font-size: 16px;
+}
+
+.navCard .navCard__proPrice{
+    color: #ff6700;
+    font-size: 14px;
+}
